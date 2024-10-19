@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280sp"
+    android:layout_height="380sp"
+    android:padding="16dp"
+    android:background="@color/beige"
+    >
+
+    <!-- Close Button (X) -->
+    <ImageButton
+        android:id="@+id/closeSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:contentDescription="Close"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- User's DP (Profile Image) -->
+    <ImageView
+        android:id="@+id/user_dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/closeSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- User's Name -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/user_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Forfeit Button -->
+    <Button
+        android:id="@+id/btnForfeit"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:text="Forfeit"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:background="@drawable/button_background"/>
+
+    <!-- Draw Button -->
+
+    <!-- New Game Button -->
+
+    <Button
+        android:id="@+id/btnDraw"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_background"
+        android:text="Draw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="New Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDraw" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/new_game_will_forefiet_the_ncurrent_game"
+        android:gravity="center"
+        android:textColor="@color/gery"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewGame"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

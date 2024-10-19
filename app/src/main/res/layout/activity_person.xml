@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonActivity"
+    android:background="@color/beige">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="135dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/text_border"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="textPassword"
+        android:text="   ********"
+        android:textSize="25sp"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/forgotTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Update password?"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextView" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:padding="12dp"
+        android:background="@drawable/text_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameEditText"
+        app:layout_constraintWidth_percent="0.8"
+        android:editable="false"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgotTextView"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:padding="12dp"
+        android:background="@drawable/text_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/user_name"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/email"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/password"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Email Field -->
+
+    <!-- Hidden Password Field (Non-editable) -->
+
+    <!-- Forgot Username/Password Text -->
+
+    <!-- Back Button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

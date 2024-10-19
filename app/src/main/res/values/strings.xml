@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">King\'s Gambit</string>
+    <string name="dont_have_an_account_sign_up"><u>Don\'t have an account? Sign up</u></string>
+    <string name="login">LogIn</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="log_in">Log In</string>
+    <string name="enter_email">Email Address</string>
+    <string name="user_name">User Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_nlogin_here">Already have an account?\nLogin here</string>
+    <string name="enter_username_name_here">Enter username name here</string>
+    <string name="new_game_will_forefiet_the_ncurrent_game">New game will forefiet the \ncurrent game</string>
+</resources>
